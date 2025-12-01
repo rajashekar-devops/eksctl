@@ -1,0 +1,13 @@
+# An example of ClusterConfig showing nodegroups with mixed instances (spot and on demand):
+---
+apiVersion: eksctl.io/v1alpha5
+kind: Namespace
+
+metadata:
+    name: roboshop-dev
+    region: us-east-1
+
+managedNodeGroups:
+- name: spot
+  instanceTypes: ["m5.large","t3.micro","t3.medium","c5.large"]
+  spot: true
