@@ -1,3 +1,4 @@
+#!/bin/bash
 #COMPLETED WORKSTATION BUILD WITH DOCKER|KUBERNETES|EKSCTL
 #**********************************************************
 # Docker download and installation
