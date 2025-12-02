@@ -29,15 +29,12 @@ mkdir -p $HOME/bin && cp ./kubectl $HOME/bin/kubectl && export PATH=$HOME/bin:$P
 #====================================================================
 # Install kubens with kubectx
 #-------------------------------------
-sudo apt install kubectx
+# sudo apt install kubectx
 
 #If Linux doesnt have default repo follow below for kubens
-# git clone https://github.com/ahmetb/kubectx.git ~/.kubectx
-
-# sudo ln -s ~/.kubectx/kubectx /usr/local/bin/kubectx
-# sudo ln -s ~/.kubectx/kubens   /usr/local/bin/kubens
-# mkdir -p ~/.bash_completion.d
-# cp ~/.kubectx/completion/kubectx.bash ~/.bash_completion.d/
-# cp ~/.kubectx/completion/kubens.bash ~/.bash_completion.d/
-# source ~/.bashrc
+git clone https://github.com/ahmetb/kubectx.git ~/.kubectx
+sudo ln -s ~/.kubectx/kubens   /usr/local/bin/kubens
+mkdir -p ~/.bash_completion.d
+cp ~/.kubectx/completion/kubens.bash ~/.bash_completion.d/
+source ~/.bashrc
 
